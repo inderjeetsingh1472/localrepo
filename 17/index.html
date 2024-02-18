@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            color: red;
+            background-color: blue;
+        } */
+        /* use of class selector */
+        .red{
+            background-color: green;
+            color: yellow;
+        }
+        /* id selector */
+        #green{
+            background-color: purple;
+            color: rgb(99, 167, 22);
+        }
+        /* child selector */
+        div > p{
+            color: rgb(44, 150, 88);
+            background-color: black;
+        }
+        /* Desendent selector */
+        div p{
+            background-color: khaki;
+            
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            color: red;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: pink;
+        }
+        a:active{
+            background-color: rgb(228, 14, 61);
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- this is class selector -->
+    <div class="red">hey i am a div</div>
+    <!-- following is id selector -->
+    <div id="green">hey i am another one</div>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repellendus voluptatem veniam corrupti vero quae?</p>
+    </div>
+    <div>
+        <article>
+            <p>inderjeet singh dandiwal</p>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com">google</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box-model</title>
+    <style>
+        .box {
+            background-color: rgb(41, 145, 236);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            color: rgb(97, 250, 9);
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid red;
+            height: 200px;
+            /* following give a message to browser ,the 200px height is not a height of only element ,it also include border and padding height */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red; 
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid rgb(14, 13, 13);
+            height: 200px;
+            /* following give a message to browser ,the 200px height is not a height of only element ,it also include border and padding height */
+            box-sizing: border-box;
+        }
+        /* between the margin of both we see margin collapse , we know margin of box1 is 5 and margin of box2 is also 5 , so we expect the margin between these two is 10 , but in actual this is five because of maargin collapse */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">i am a box</div>
+    <div class="box box2">hey i am another box</div>
+</body>
+
+</html>
