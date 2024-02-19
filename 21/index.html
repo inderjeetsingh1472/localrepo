@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: purple;
+        }
+        #dandiwal{
+            color: brown;
+        }
+        .inder{
+            /* how to use important */
+            color: rgb(123, 123, 146) !important;
+        }
+        /* if we add any two selectors then this specificity is add */
+        h1.singh{
+            color: red;
+        }
+        .singh{
+            color: yellow;
+        }
+        .jeet{
+            color: green;
+        }
+        [data-x=i]{
+            /* this is attribute selector */
+background-color: rgb(76, 62, 201);
+        }
+        /* css is add of that class which class css is order is last  */
+        /* if the type of selector change in css then order cannot matter */
+        /* specificity of selector in css following :- */
+        /* important>inline style >Id selector >class or Attribute selector >element selector >universal selectori */
+    </style>
+</head>
+<body>
+    <h1 class="inder jeet singh" id="dandiwal" data-x="i">inderjeet singh dandiwal</h1>
+</body>
+</html>
