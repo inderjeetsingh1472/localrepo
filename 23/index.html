@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        .box{
+            border: 2px solid blue;
+            /* display: inline-block; do inline block to apply padding and margin from top */
+            display: inline-block;
+            width: 319px;
+            padding: 45px;
+            /* margin and padding cannot apply from top if element is inline */
+            margin: 34px;
+            /* display: none; */
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        im am box
+    </div>
+    <div class="box">also a nice box</div>
+    <span>
+        i am good 
+    </span>
+    <span>boy</span>
+</body>
+</html>
