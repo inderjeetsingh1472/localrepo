@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            width: 80vw;
+height: 50vh;
+            border: 2px solid rgb(22, 22, 22);
+            display: grid;
+            /* using following we create a gap between column and rows  we also determine the name of columns and rows */
+            /* grid-template-columns: [phila]120px [duja]100px [teja];
+            grid-template-rows: 100px 100px 100px; */
+            /* 1fr means one fraction now we write it three times so this is going to one-third one-third one-third */
+            /* grid-template-columns: repeat(3,minmax(100px,1fr)); */
+            grid-template-columns: repeat(4,80px);
+            grid-template-rows: repeat(2,80px);
+            /* justify-content: center;
+            align-content: center; */
+            /* if you want to do center both justify and align use following */
+            place-content: center;
+
+            justify-items: center;
+            align-items: center;
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        .item4{
+            /* by using following we move the position of element */
+            /* grid-row: 1/2 ; */
+            /* grid-column: phila/duja ; */
+            align-self: end;
+            justify-self: start;
+
+        }
+        .item1{
+            /* grid-row: 1/2; */
+            /* grid-column: 1/2; */
+            /* rather than we do upper one we also write following  */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 2; */
+            /* grid-column-start: 1; */
+            /* grid-column-end: 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
