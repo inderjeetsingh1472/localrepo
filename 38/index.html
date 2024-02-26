@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* when we have only one line then we use only align-items: ; */
+            align-items: center;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* when we have multiple line then we use align-content: ; */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* the following property is used to selecy flex-direction and flex-wrap */
+            /* flex-flow: row wrap; */
+            /* using gap property we define gap between box vertically and horizently also */
+            /* gap: 30px; */
+            /* row-gap: 30px; */
+            /* column-gap: 30px; */
+            /* rather than define differently define row and coloumn gap we use following property */
+            /* gap: rowgap columngap; */
+            gap: 14px 30px;
+
+
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            /* padding: 4px; */
+            background-color: rgb(43, 226, 98);
+            /* flex-grow: 1; */
+
+        }
+        /* note that default order of all elements is one  */
+        .order1{
+            order: 1;
+            /* flex-grow: 3; */
+            /* the following property is used to shrink that specific item when content over flow */
+            flex-shrink: 2;
+            /* the following property is used to move particular item in any direction which we want */
+            align-self: flex-end;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item order3">5</div>
+        <div class="item order1">6</div>
+        <div class="item order2">7</div>
+         <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div> 
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <!-- <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div>
+        <div class="item">25</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+    </div>
+</body>
+</html>
