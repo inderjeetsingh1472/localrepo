@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vw;
+            border: 2px solid green;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid red;
+            /* basically 1 turn=rotate by 360degree */
+            transform: rotate(0.125turn);
+            transform-origin:0% 0% ;
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+            /* i you want to manage element size then do following */
+            /* transform: scale(1.6); */
+            /* transform: scaleX(1.4); */
+            /* transform: scale3d(10.25turn); */
+            /* transform: skew(5deg); */
+            /* we also apply one or more properties in one command like following */
+            /* transform: translateX(34%) skewx(40deg) translatey(45%); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">box</div>
+    </div>
+</body>
+</html>
