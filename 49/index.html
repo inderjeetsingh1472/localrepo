@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fit and position</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: green;
+            /* background-position: center center; */
+            /* it include padding */
+            /* background-clip: border-box; */
+            background-image: url("train.jpeg");
+            
+        }
+        img{
+            width: 50px;
+height: 50px;
+/* the following property used to se  all imag in your given area but in output some area will unfilled */
+/* object-fit: contain; */
+/* following property used to cover all given height: and width: ; */
+object-fit: cover;
+/* following property used to se  full img to cover  full given artea but img is distorted */
+object-fit: fill;
+/* through following property you manage which side of img you want to see */
+object-position: top right;
+/* object-fit: scale-down; */
+object-position: 10px 20px;
+object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="train.jpeg" alt="train"> -->
+    </div>
+</body>
+</html>
