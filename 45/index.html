@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition property</title>
+    <style>
+        .container {
+            background-color: red;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 5vw;
+            height: 4vw;
+            /* following use kis par lgana hai */
+            /* transition-property: transform , all; */
+            /* following use kitni der tak chalega */
+            /* transition-duration: 3s; */
+            /* following use kis tareke se chalega */
+            /* transition-timing-function: cubic-bezier(1,-0.53, 1, 1); */
+            /* following use kitne time ke bad chalna start hoga */
+            /* transition-delay: 1s; */
+            /* rather than writing transiton properties four time we use it following to save time */
+            transition: all 3s ease-in-out 1s;
+        }
+
+        .translate {
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>
