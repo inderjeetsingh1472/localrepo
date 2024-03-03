@@ -1,5 +1,4 @@
 alert("hello world");
-inder@1472("the best thing the best full of the find the go the best in the in the could thing in the find the best full of the best in the way to recover of rthe ")
 console.log("code is running....")
 console.log("code is also running")
 var a=prompt("enter your number")
