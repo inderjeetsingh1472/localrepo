@@ -1,4 +1,4 @@
-                       ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,8 @@
             /* width: 2000px;   rather than use pixel we use */
             width: 90vw;
             /* vw means viewport width and 100vw means ;it take 100 width of your device */
-            margin: auto;
+            /* margin auto used to move div in center margin: y-axis x-axis; */
+            margin: 23px auto; 
             height: 80vh;
             /* vh stands for view port height: ; */
             background-color: aqua;
@@ -23,13 +24,20 @@
         }
 
         .container {
-            font-size: 1.5em;
+            /* font-size: 1.5em; */
             /* em is used to fluctuate size by em , now this is 1.5 ,and its inherid size is 18 px ,so it keep para size to 1.5 of 18px */
-        }
+        /* rem is used to fluctuate the fot size of root element for ex we write int size in html which apply on all html by default , to flactuate it we use rem , here we do 2rem which means font size of this div is 2 times than html; */
+            font-size: 2rem; }
 
         * {
             margin: 0;
             padding: 0;
+        }
+        .mycont{
+            color: yellow;
+            background-color: green;
+            font-size: 34px;
+            width: 100vmin;
         }
     </style>
 </head>
@@ -42,6 +50,9 @@
             quis id dolorum reprehenderit explicabo sit, deserunt, cumque assumenda dicta minima dolorem nulla. Facilis,
             laboriosam numquam facere, minus non perferendis iste adipisci, consectetur odit commodi quae dolor magni
             dolorum maxime velit!</p>
+    </div>
+    <div class="mycont">
+        i am another container
     </div>
 </body>
 
