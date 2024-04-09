@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100" height="100">
+  <!-- Circular background with green color and padding -->
+  <circle cx="120" cy="120" r="110" fill="#1fdf64" />
+  <!-- Original SVG icon centered inside the circle -->
+  <g transform="translate(120 120)">
+    <!-- Calculate the appropriate translation values to center the icon -->
+    <g transform="scale(5) translate(-11 -10)">
+      <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z" fill="#000" />
+    </g>
+  </g>
+</svg>
