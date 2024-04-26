@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-image:url(mainback.jpg);
+            height: 100vw;
+            width: 100%;
+            opacity: 0.44;
+        }
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    .logo img{
+        width: 60px;
+color: rgb(238, 27, 27);
+}
+.lang{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 40px;
+    height: 30px;
+}
+.sign{
+    display:  flex;
+    height: 27px;
+    background-color: red;
+}
+</style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.svg" alt="logo">
+                </div>
+                <div class="lang">
+                    <select name="english" id="english">
+                        <option value="english">english</option>
+                    </select>
+                    <div class="sign">
+<button>sign&nbsp;in</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+</body>
+</html>
